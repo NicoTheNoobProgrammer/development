@@ -241,3 +241,4 @@ class PaymentViewSet(viewsets.ModelViewSet):
         if self.request.query_params.get('latest') == 'true':
             return queryset.order_by('-created_at')[:1]
         return queryset.order_by('-created_at')
+print("ipt 1 - sir doms")
